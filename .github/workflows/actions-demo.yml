@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  build:
+  name: Greeting
+  runs-on: ubuntu-latest
+  steps:
+  - users: actions/checkout@v2
+  - name: Run a multi-line script
+    run: |
+      echo Add other actions to build
+  
