@@ -1,6 +1,15 @@
 on: [push]
 
 jobs:
+  build-and-test:
+    name: testing
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a multi-line script
+      run: |
+        echo test
+
   build:
     name: Greeting
     runs-on: ubuntu-latest
